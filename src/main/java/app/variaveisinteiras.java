@@ -4,11 +4,14 @@ public class variaveisinteiras {
     public static void main(String[] args) {
         double passagem = 5.59;
 
+        char p = 'p';
+        char a = 'a';
         char o = 'o';
-        char i = 'i';
+        char l = 'l';
+        char oo = 'o';
 
-        System.out.println(o+i);
-        System.out.println("O valor da passagem é " + passagem);
+        System.out.println(p+a+o+l+oo);
+        System.out.println(""+p+a+o+l+oo);
         
     }
     

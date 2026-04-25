@@ -1,0 +1,12 @@
+public class Loja {
+    private String nome;
+    private int quantidadeFuncionarios;
+    private double salarioBaseFuncionario;
+
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = salarioBaseFuncionario;
+    }
+
+}

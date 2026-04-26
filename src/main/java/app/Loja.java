@@ -65,6 +65,14 @@ public class Loja {
     }
     
     public int tamanhoDaLoja(){
+        if (tamanhoDaLoja() < 10) {
+            return 'P';
+        }else if (tamanhoDaLoja() >= 10 && tamanhoDaLoja() <= 30) {
+            return 'M';
+        }else {
+            return 'G';
+        }
+
         
     }
 }

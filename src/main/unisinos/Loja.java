@@ -58,7 +58,7 @@ public class Loja {
                "Salario Base do Funcionario: " + salarioBaseFuncionario;
     }
 
-    public double gastosComSalarios(){
+    public double gastosComSalario(){
         if (salarioBaseFuncionario == -1){  //Quando for chamado o metodo, se n tiver definido retorna -1
             return -1;
         }
@@ -66,9 +66,9 @@ public class Loja {
     }
     
     public int tamanhoDaLoja(){
-        if (tamanhoDaLoja() < 10) {
+        if (quantidadeFuncionarios < 10) {
             return 'P';
-        }else if (tamanhoDaLoja() >= 10 && tamanhoDaLoja() <= 30) {
+        }else if (quantidadeFuncionarios >= 10 && quantidadeFuncionarios <= 30) {
             return 'M';
         }else {
             return 'G';

@@ -1,3 +1,5 @@
+package unisinos;
+
 public class Data {
     private int dia;
     private int mes;
@@ -24,7 +26,7 @@ public class Data {
 
         int[] diasMes = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; //indice zero começa em janeiro e assim vai, lembrar que java começa em 0 engual python
 
-        if (anobissexto(ano)){
+        if (verificaAnoBissexto(ano)){
             diasMes[1] = 29; //atualiza a lista no 1 (que seria feveireiro) dai ele tem 29 dias
         }
 
@@ -72,7 +74,11 @@ public class Data {
         return dia + "/" + mes + "/" + ano;
     }
 
-    private boolean anobissexto(int ano){
+    public boolean verificaAnoBissexto(){
+        return verificaAnoBissexto(this.ano);
+    }
+
+    private boolean verificaAnoBissexto(int ano){
         if (ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0){
             return true;
         } else {

@@ -20,13 +20,14 @@ public class Data {
     }
 
     private boolean dataValida(int dia, int mes, int ano){ //no caso aqui como é booleano só retorna true ou false! 
+        Data data = new Data(dia, mes, ano);
         if (mes < 1 || mes > 12) return false;
         if (dia < 1 || dia > 31) return false;
         if (ano < 1) return false;
 
         int[] diasMes = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; //indice zero começa em janeiro e assim vai, lembrar que java começa em 0 engual python
 
-        if (verificaAnoBissexto(ano)){
+        if (data.verificaAnoBissexto()){
             diasMes[1] = 29; //atualiza a lista no 1 (que seria feveireiro) dai ele tem 29 dias
         }
 
@@ -75,11 +76,7 @@ public class Data {
     }
 
     public boolean verificaAnoBissexto(){
-        return verificaAnoBissexto(this.ano);
-    }
-
-    private boolean verificaAnoBissexto(int ano){
-        if (ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0){
+        if (this.ano % 4 == 0 && this.ano % 100 != 0 || this.ano % 400 == 0){
             return true;
         } else {
             return false;

@@ -78,7 +78,7 @@ public class Endereco {
     //toString
     @Override
     public String toString() {
-        return "Endereço:" + "Rua " + nomeDaRua + ",Cidade " + cidade + ",Estado" + estado + ",pais " + pais + ",CEP " + cep + ",número " + numero + ", " + complemento;
+        return "Endereço: Rua " + nomeDaRua + ", " + numero + ", " + complemento + " - " + cidade + "/" + estado + " - " + pais + " - CEP: " + cep;
     }
 
 }

@@ -6,7 +6,7 @@ public class variaveis {
        
         int idade;
         String nome = "BRUNA";
-        String nomeDoMeuCachorro = "BECA";
+        String nomeDoMeuCachorro = "BECA"; //A STRING EALA COMEÇA COM S MAIUSCULO PQ PODE SER CLASSE CURISIDADE AMEM!!!!!!!!!!
 
         idade = 90;
 

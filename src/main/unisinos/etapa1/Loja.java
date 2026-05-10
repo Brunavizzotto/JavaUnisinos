@@ -31,7 +31,6 @@ public class Loja {
         this.nome = nome;
     }
 
-
     //getter e setter quanitdade de funcionario
     public int getQuantidadeFuncionarios(){
         return quantidadeFuncionarios;

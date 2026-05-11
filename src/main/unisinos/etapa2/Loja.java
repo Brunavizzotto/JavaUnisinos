@@ -54,6 +54,23 @@ public class Loja {
         this.salarioBaseFuncionario = salarioBaseFuncionario;
     }
 
+    //etapa 2
+    public Endereco getEndereco() {
+    return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public Data getDataFundacao() {
+        return dataFundacao;
+    }
+
+    public void setDataFundacao(Data dataFundacao) {
+        this.dataFundacao = dataFundacao;
+    }
+
     //METODO toString
     @Override
     public String toString(){
